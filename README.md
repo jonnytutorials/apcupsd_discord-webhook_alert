@@ -1,5 +1,5 @@
 # Über einen Discord Webhook einen apcupsd alert senden
-**APCupsd muss komplett installiert und eingerichtet sein!**
+**[apcupsd](http://www.apcupsd.org/) muss komplett installiert und eingerichtet sein!**
 
 <p align="center">
 <img src="https://i.ibb.co/fYgXMS5/bot-announce.png" border="0" alt="bot-announce">
