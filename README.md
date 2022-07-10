@@ -49,4 +49,4 @@ curl -X POST -H 'Content-Type: application/json' -d "$PAYLOAD" "$WEBHOOK_URL"
 </p>
 
 7. Speichere und Verlasse die offbattery
-### Fertig! Fehler kannst du [hier](https://github.com/jonnytutorials/Strato-dyndns-linux/issues/new) melden. Für Verbesserungsvorschläge steht mein [Discord Server](https://discord.gg/s9tD46Fwh8) zur Verfügung.
+### Fertig! Fehler kannst du [hier](https://github.com/jonnytutorials/apcupsd_discord-webhook_alert/issues/new) melden. Für Verbesserungsvorschläge steht mein [Discord Server](https://discord.gg/s9tD46Fwh8) zur Verfügung.
