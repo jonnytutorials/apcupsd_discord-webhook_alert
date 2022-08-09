@@ -2,7 +2,7 @@
 **[apcupsd](http://www.apcupsd.org/) muss komplett installiert und eingerichtet sein!**
 
 <p align="center">
-<img src="https://i.ibb.co/fYgXMS5/bot-announce.png" border="0" alt="bot-announce">
+<img src="https://data.jonnytutorials.de/img/apcupsd-github/1.png" border="0" alt="bot-announce">
 </p>
 
 ## Setup
@@ -26,7 +26,7 @@ PAYLOAD=" { \"content\": \"$TIMESTAMP | $NACHRICHT\" }"
 curl -X POST -H 'Content-Type: application/json' -d "$PAYLOAD" "$WEBHOOK_URL"
 ```
 <p align="center">
-<img src="https://i.ibb.co/kS1rjCz/onbattery.png" alt="onbattery">
+<img src="https://data.jonnytutorials.de/img/apcupsd-github/2.png" alt="onbattery">
 </p>
 
 4. Speichere und Verlasse die `onbattery`
@@ -45,7 +45,7 @@ curl -X POST -H 'Content-Type: application/json' -d "$PAYLOAD" "$WEBHOOK_URL"
 ```
 
 <p align="center">
-<img src="https://i.ibb.co/2PHvRNZ/offbattery.png" alt="offbattery">
+<img src="https://data.jonnytutorials.de/img/apcupsd-github/3.png" alt="offbattery">
 </p>
 
 7. Speichere und Verlasse die offbattery
