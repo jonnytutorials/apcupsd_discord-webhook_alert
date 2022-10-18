@@ -5,18 +5,24 @@
 <img src="https://data.jonnytutorials.de/img/apcupsd-github/1.png" border="0" alt="bot-announce">
 </p>
 
-## Setup
-1. Wechsle in den apcupsd Ordner
+## Setup Linux
+1. Installation der nötigen Erweiterungen
+<br> Hinweis: Manchmal ist [curl](https://de.wikipedia.org/wiki/CURL) schon vorinstalliert!
+``` shell
+apt-get install curl
+```
+
+2. Wechsle in den apcupsd Ordner
 ``` shell
 cd /etc/apcupsd/
 ```
 
-2. Öffne die `onbattery` (In der Datei werden alle Befehle ausgeführt, wenn der Server auf Batterie-Strom läuft.)
+3. Öffne die `onbattery` (In der Datei werden alle Befehle ausgeführt, wenn der Server auf Batterie-Strom läuft.)
 ``` shell
 nano onbattery
 ```
 
-3. Füge diese Zeilen über `exit 0` ein. Fülle noch die `WEBHOOK_URL` und die `NACHRICHT` aus!
+4. Füge diese Zeilen über `exit 0` ein. Fülle noch die `WEBHOOK_URL` und die `NACHRICHT` aus!
 ``` shell
 WEBHOOK_URL="" #Trage hier deinen Webhook-URL ein
 NACHRICHT="" #Trage hier die Nachricht, die gesendet werden soll wenn der Strom ausfaellt.
@@ -29,12 +35,12 @@ curl -X POST -H 'Content-Type: application/json' -d "$PAYLOAD" "$WEBHOOK_URL"
 <img src="https://data.jonnytutorials.de/img/apcupsd-github/2.png" alt="onbattery">
 </p>
 
-4. Speichere und Verlasse die `onbattery`
-5. Öffne nun die `offbattery` (In der Datei werden alle Befehle ausgeführt, wenn der Server wieder auf Netz-Strom läuft.)
+5. Speichere und Verlasse die `onbattery`
+6. Öffne nun die `offbattery` (In der Datei werden alle Befehle ausgeführt, wenn der Server wieder auf Netz-Strom läuft.)
 ``` shell
 nano offbattery
 ```
-6. Füge diese Zeilen über `exit 0` ein. Fülle noch die `WEBHOOK_URL` und die `NACHRICHT` aus!
+7. Füge diese Zeilen über `exit 0` ein. Fülle noch die `WEBHOOK_URL` und die `NACHRICHT` aus!
 ``` shell
 WEBHOOK_URL="" #Trage hier deinen Webhook-URL ein
 NACHRICHT="" #Trage hier die Nachricht, die gesendet werden soll wenn der Strom wieder da ist.
@@ -48,5 +54,5 @@ curl -X POST -H 'Content-Type: application/json' -d "$PAYLOAD" "$WEBHOOK_URL"
 <img src="https://data.jonnytutorials.de/img/apcupsd-github/3.png" alt="offbattery">
 </p>
 
-7. Speichere und Verlasse die offbattery
+8. Speichere und Verlasse die offbattery
 ### Fertig! Fehler kannst du [hier](https://github.com/jonnytutorials/apcupsd_discord-webhook_alert/issues/new) melden. Für Verbesserungsvorschläge steht mein [Discord Server](https://discord.gg/s9tD46Fwh8) zur Verfügung.
