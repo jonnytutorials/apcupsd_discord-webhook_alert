@@ -35,7 +35,7 @@ curl -X POST -H 'Content-Type: application/json' -d "$PAYLOAD" "$WEBHOOK_URL"
 <img src="https://data.jonnytutorials.de/img/apcupsd-github/2.png" alt="onbattery">
 </p>
 
-5. Speichere und Verlasse die `onbattery`
+5. Speichere und Verlasse die `onbattery` Datei.
 6. Öffne nun die `offbattery` (In der Datei werden alle Befehle ausgeführt, wenn der Server wieder auf Netz-Strom läuft.)
 ``` shell
 nano offbattery
@@ -54,5 +54,5 @@ curl -X POST -H 'Content-Type: application/json' -d "$PAYLOAD" "$WEBHOOK_URL"
 <img src="https://data.jonnytutorials.de/img/apcupsd-github/3.png" alt="offbattery">
 </p>
 
-8. Speichere und Verlasse die offbattery
+8. Speichere und Verlasse die `offbattery` Datei.
 ### Fertig! Fehler kannst du [hier](https://github.com/jonnytutorials/apcupsd_discord-webhook_alert/issues/new) melden. Für Verbesserungsvorschläge steht mein [Discord Server](https://discord.gg/s9tD46Fwh8) zur Verfügung.
